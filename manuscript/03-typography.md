@@ -361,7 +361,7 @@ Contoh penggunaan tag link `<a>`:
 </html>
 ```
 
-![Cara Membuat link di HTML](images/link.png)
+![Cara Membuat link di HTML](images/link.PNG)
 
 ### Alamat Absulut dan Alamat Relatif
 
@@ -398,7 +398,7 @@ Contoh penggunaan tag link `<a>` untuk alamat relatif:
 </html>
 ```
 
-![Cara Membuat link di HTML Relative](images/link-relatif.png)
+![Cara Membuat link di HTML Relative](images/link-relatif.PNG)
 
 Alamat absolute ditulis dengan lengkap, seperti
 `http://turahe.github.io`, atau jika kita merujuk kepada halaman
@@ -443,7 +443,7 @@ target="_blank">turahe</a> dan akan terbuka pada tab baru</p>
 </html>
 ```
 
-![Cara Membuat link di HTML 3](images/link-target.png)
+![Cara Membuat link di HTML 3](images/link-target.PNG)
 
 Jika kita men-klik link tersebut, maka halaman turahe.github.io akan
 terbuka di tab baru, dan tidak menimpa tab saat ini.
@@ -705,7 +705,7 @@ HTML dengan menggunakan atribut align="left" pada gambar.
 
 <p>Turahe adalah situs porfolio milik Nur Wachid yang digunakan
 untuk menjual kemampuan dari Seorang Wachid.
-<img src="turahe.png" alt="gambar turahe" height="100px"
+<img src="turahe.PNG" alt="gambar turahe" height="100px"
 align="left"/>
 Saat ini Wachid masih menyediakan jasa pembuatan website baik menggunakan
 html biasa atau menggunakan Framwok seperti Laravel.
@@ -739,7 +739,7 @@ menggunakan atribut border="5" pada gambar:
 <h3 id="judul1">Saya sedang belajar HTML di turahe.github.io</h3>
 
 <p>turahe adalah situs Belajar Ilmu Komputer.
-<img src="turahe.png" alt="gambar turahe" height="100px"
+<img src="turahe.PNG" alt="gambar turahe" height="100px"
 align="right" border="5"/>
 turahe didedikasikan bagi anda yang ingin mempelajari
 tentang dunia ilmu komputer.
@@ -963,7 +963,7 @@ Berikut contoh penggunaan atribut cellpadding dalam tag table HTML:
 </html>
 ```
 
-![Belajar HTML atribut cellpadding dalam Tabel](images/tabel-cellpadding.png)
+![Belajar HTML atribut cellpadding dalam Tabel](images/tabel-cellpadding.PNG)
 
 Pengaturan cellpadding yang tepat akan membuat isi text tabel menjadi
 lebih rapi dan mudah dibaca.
@@ -1017,7 +1017,7 @@ Berikut contoh penggunaan atribut cellspacing dalam tag table HTML:
 </html>
 ```
 
-![Belajar HTML atribut cellspacing dalam Tabel](images/tabel-cellspacing.png)
+![Belajar HTML atribut cellspacing dalam Tabel](images/tabel-cellspacing.PNG)
 
 Menggabungkan ketiga atribut tersebut dalam sebuah tabel, maka kita
 dapat menyesuaikan tampilan tabel sesuai dengan keinginan kita.
@@ -1072,7 +1072,7 @@ Contoh penggunaan atribut rowspan and colspan:
 </html>
 ```
 
-![](images/tabel-rowspan-colspan.png)
+![](images/tabel-rowspan-colspan.PNG)
 
 Dalam contoh diatas, kita dapat melihat bahwa tag td yang memiliki
 atribut colspan, akan membuat sel tabel bersatu dengan kolom
@@ -1136,7 +1136,7 @@ Contoh penggunaan tag th:
 </html>
 ```
 
-![Cara Membuat Kolom Header Untuk Tabel HTML (Tag th) ](images/tabel-th.png)
+![Cara Membuat Kolom Header Untuk Tabel HTML (Tag th) ](images/tabel-th.PNG)
 
 Perhatikan pada baris
 pertama tabel, dimana dalam tutorial tentang tabel HTML sebelumnya,
@@ -1200,7 +1200,7 @@ Contoh penggunaan tag caption:
 </html>
 ```
 
-![Contoh penulisan tag caption tabel HTML](images/tabel-caption.png)
+![Contoh penulisan tag caption tabel HTML](images/tabel-caption.PNG)
 
 Ketika dijalankan pada web
 browser, tag caption tersebut akan ditampilkan sebelum tabel, sehingga
@@ -1275,7 +1275,7 @@ Contoh penggunaan tag thead, tfoot dan tbody:
 </html>
 ```
 
-![Contoh Cara Membuat Struktur Tabel HTML (thead, tfoot dan tbody)](images/tabel-thead-tfoot-tbody.png)
+![Contoh Cara Membuat Struktur Tabel HTML (thead, tfoot dan tbody)](images/tabel-thead-tfoot-tbody.PNG)
 
 Kode
 HTML diatas terasa sedikit panjang untuk membuat sebuah tabel bila
@@ -1357,7 +1357,7 @@ Contoh penggunaan tag colgroup dan tag col :
 </html>
 ```
 
-![Contoh penggunaan tag colgroup dan tag col](images/tabel-colgroup.png)
+![Contoh penggunaan tag colgroup dan tag col](images/tabel-colgroup.PNG)
 
 Untuk contoh diatas, saya menggunakan tag style untuk ‘memasukkan’ kode
 CSS. Lebih jauh tentang CSS, silahkan mempelajarinya pada Tutorial
@@ -1415,7 +1415,7 @@ Contoh penggunaan atribut width pada tag col :
 </html>
 ```
 
-![Contoh atribut width pada tag col HTML](images/tabel-width.png)
+![Contoh atribut width pada tag col HTML](images/tabel-width.PNG)
 
 Dari contoh kode HTML diatas, saya
 menggunakan atribut width untuk mengatur lebar dari kolom tabel.
@@ -1566,7 +1566,7 @@ savelah sebagai tabelrules.html
 </html>
 ```
 
-![Contoh pemakaian atribut rules dalam tabel HTML](images/tabel-rules.png)
+![Contoh pemakaian atribut rules dalam tabel HTML](images/tabel-rules.PNG)
 
 Dari hasil kode HTML
 diatas, terlihat perbedaan untuk masing-masing nilai rules. Anda bisa
@@ -1624,7 +1624,7 @@ sehingga merusak tampilan dari tabel</td>
 </html>
 ```
 
-![Contoh Tabel HTML Tabel Tanpa Atribut Width](images/tabel-attribut-width.png)
+![Contoh Tabel HTML Tabel Tanpa Atribut Width](images/tabel-attribut-width.PNG)
 
 Dapat dilihat bahwa web browser menampilkan tabel sesuai dengan panjang
 data yang terdapat pada baris terpanjang, dan jika anda mencoba
@@ -1682,7 +1682,7 @@ sehingga merusak tampilan dari tabel</td>
 </html>
 ```
 
-![Contoh Tabel HTML Tabel Dengan Atribut Width](images/tabel-lebar.png)
+![Contoh Tabel HTML Tabel Dengan Atribut Width](images/tabel-lebar.PNG)
 
 Jika anda mencoba mengubah kembali ukuran web browser, tampilan tabel
 akan tetap, sesuai dengan nilai dari atribut width.
@@ -1748,7 +1748,7 @@ sehingga merusak tampilan dari tabel</td>
 </html>
 ```
 
-![Contoh Tabel HTML Tabel Dengan Atribut Width Pada Kolom](images/tabel-lebar-kolom.png)
+![Contoh Tabel HTML Tabel Dengan Atribut Width Pada Kolom](images/tabel-lebar-kolom.PNG)
 
 Seperti yang terlihat, bahwa lebar dari masing-masing kolom diset
 melalui nilai atribut width.
@@ -1813,7 +1813,7 @@ Berikut contoh penggunaan atribut height pada tag table:
 </html>
 ```
 
-![](images/tabel-tinggi.png)
+![](images/tabel-tinggi.PNG)
 
 Contoh Cara Merubah dan Mengatur Tinggi Baris
 Tabel (atribut height) HTML 1Pada contoh kode HTML diatas saya
@@ -1860,7 +1860,7 @@ setiap tag `tr`. Berikut contoh penggunaan atribut height pada tag tr:
 </html>
 ```
 
-![](images/tabel-tinggi-tr.png)
+![](images/tabel-tinggi-tr.PNG)
 
 Contoh Cara Merubah dan Mengatur Tinggi Baris
 Tabel (atribut height) HTML 2Seperti yang terlihat, bahwa ketiga baris
@@ -1933,7 +1933,7 @@ browser</p> <p> Ini juga tidak tampil di browser</p> -->
 </body> </html>
 ```
 
-![Cara Menambahkan komentar di HTML](images/komentar.png)
+![Cara Menambahkan komentar di HTML](images/komentar.PNG)
 
 Selain sebagai pengingat atau catatan, tag komentar juga akan berguna
 untuk membuat sebagian isi web tidak tampil untuk sementara. hal ini

@@ -42,7 +42,7 @@ Untuk memahami kegunaan tag label, silahkan jalankan contoh kode form HTML berik
 </html>
 ```
 
-![Tutorial Pembuatan Form HTML - Contoh Penggunaan Tag Label](images/label.png)
+![Tutorial Pembuatan Form HTML - Contoh Penggunaan Tag Label](images/label.PNG)
 
 Dari contoh kode form HTML diatas, saya membuat 3 isian checkbox sederhana. Ketika kita “mencheklist" salah satu dari checkbox tersebut, cara yang paling banyak digunakan adalah dengan men-klik kotak putih pada checkbox tersebut.
 
@@ -123,7 +123,7 @@ Sebagai contoh utuh dari form kita, berikut adalah contoh form sebelumnya dengan
 </html>
 ```
 
-![Tutorial Pembuatan Form HTML - Contoh Penggunaan Tag Label 2](images/label-tag.png)
+![Tutorial Pembuatan Form HTML - Contoh Penggunaan Tag Label 2](images/label-tag.PNG)
 
 Silahkan anda mencoba menjalankan kode tersebut, dan jika anda men-klik tulisan keterangan dari checkbox, maka secara langsung kotak checkbox akan berisi. Hal seperti ini akan lebih memudahkan user dalam mengisi form yang kita rancang.
 
@@ -155,7 +155,7 @@ Untuk dapat membuat tampilan seperti gambar diatas, kita tinggal menambahkan tag
 </form>
 ```
 
-![Tutorial Pembuatan Form HTML - Contoh Penggunaan Tag Label 2](images/tag-fieldshid-legend.png)
+![Tutorial Pembuatan Form HTML - Contoh Penggunaan Tag Label 2](images/tag-fieldshid-legend.PNG)
 
 tag fieldset dan tag legend harus digunakan berpasangan, karena keduanya saling berkaitan. Tag fieldset berfungsi untuk menandai sampai dimana kotak fieldset akan dibuat, sedangkan tag legend berfungsi untuk memberikan judul dari fieldset tersebut.
 
@@ -291,8 +291,263 @@ Sebagai penutup, berikut adalah contoh kode HTML dalam penulisan dan penggunaan 
 </html>
 ```
 
-![Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Button](images/botton.png)
+![Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Button](images/botton.PNG)
 
 Anda akan menjumpai bahwa penggunaan tag button di dalam HTML tidak hanya terbatas di dalam form. Dalam proses desain website, tag button juga sering diprogram dengan menggunakan javascript.
 
 ## Tag Input Type Text dan Type Password dalam pembuatan Form HTML
+
+Secara umum, kedua type tag input ini berfungsi sebagai kolom isian dari user. Dengan perbedaan untuk type=password, text isian tidak akan ditampilkan, namun diganti dengan karakter khusus.
+
+Kedua tag ini biasanya digunakan di dalam form HTML, namun anda juga bisa menggunakannya di luar tag form, terutama jika anda akan memprosesnya menggunakan javascript. Format penulisan paling dasar dari tag input type=”text” dan type=”password” ini adalah:
+
+```html
+<input type="text" />
+<input type="password"/>
+```
+Jika anda menjalankan kedua baris tersebut di dalam web browser, akan tampil 2 buat kotak isian yang bisa diisi dengan text. Perbedaan keduanya hanya pada tempilan karakter dari kotak isian tersebut. untuk type=password, text pada kotak isian akan ditampilkan dengan karakter password.
+
+
+Di dalam contoh dan penjelasan dalam artikel ini, saya hanya menggunakan contoh dan penjelasan untuk tag input type=”text”. Untuk tag input type=”password” caranya persis sama, dan anda bisa merubah semua kode yang ada dari type=”text” menjadi type=”password” sebagai sarana latihan.
+Atribut name: Untuk Pemrosesan tag input type text
+Selain atribut type yang digunakan sebagai pembeda kedua input, atribut name merupakan atribut paling penting jika anda bermaksud memprosesnya menggunakan form, karena nilai dari atribut inilah yang akan digunakan sebagai nama variabel yang akan diproses oleh web server (biasanya menggunakan PHP).
+
+Berikut adalah contoh penulisan atribut name untuk tag input type=”text”:
+
+```htnl
+<form>
+   Nama: <input type="text" name="nama_user" />
+   Password: <input type="password" name="password_user"/>
+</form>
+```
+
+Anda boleh bebas memberikan nilai untuk atribut name ini, namun disarankan menggunakan nama yang singkat dan sesuai dengan peruntukannya agar tidak bingung ketika membuat program PHPnya.
+
+Atribut value: Nilai Awal tag input type text
+Atribut value digunakan sebagai nilai isian awal untuk input type=”text”. Namun atribut ini bersifat opsional dan anda tidak harus menambahkannya untuk setiap text inputan.
+
+Berikut adalah cara penulisannya:
+
+```html
+<input type="text" name="nama_user" value="masukkan nama anda"/>
+<input type="password" name="password_user" value="masukkan password anda"/>
+```
+
+Menggunakan atribut value untuk tampilan awal form akan membantu user memahami penjelasan untuk apa isian text tersebut, namun biasanya hal ini harus dikombinasikan dengan javascript agar ketika user mulai mengisi text, kotak text akan langsung kosong. Jika tidak, maka terpaksa user harus mengapus nilai awal ini secara manual.
+
+Dalam pemprosesan form oleh web server nantinya, nilai dari atribut value inilah yang akan diproses. Sehingga jika user langsung men-klik tombol submit form tanpa mengisi apa-apa, maka nilai nama yang dikirim adalah =”masukkan nama anda”. Untuk menghindari hal ini anda bisa membuat program javascript untuk menvalidasi isian form sebelum dikirim ke web server.
+
+Berikut adalah contoh penggunaan atribut value dalam tag input type=”text” HTML
+
+```html
+<!DOCTYPE html>
+<html>
+  
+<head>
+   <title>Belajar Tag Input Type=text HTML</title>
+</head>
+ 
+<body>
+ 
+   <h4>Belajar tag Input type="text" duniailkom:</h4>
+   <form>
+ 
+   Nama User :<input type="text" name="nama_user" value="masukkan nama anda"/>
+   <br/>
+ 
+   Password User :<input type="password" name="password_user"
+   value="masukkan password anda"/>
+ 
+   </form>
+</body>
+</html>
+```
+
+Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Input Type Text dan Type Password
+
+Atribut size: Mengatur Panjang Tampilan
+Atribut size untuk tag input type=”text” digunakan untuk membatasi panjang dari kotak isian. Nilai dari atribut ini adalah berapa pixel panjang kotak isian tersebut.
+
+Berikut cara penulisan atribut size:
+
+```html
+<input type="text" name="nama_user" size="4"/>
+```
+
+Berikut adalah contoh kode HTML penggunaan atribut size:
+
+```html
+<!DOCTYPE html>
+<html>
+  
+<head>
+   <title>Belajar Tag Input Type=text HTML</title>
+</head>
+ 
+<body>
+ 
+   <h4>Belajar tag Input type="text" duniailkom:</h4>
+   <form>
+ 
+   Size = 04 pixel :
+   <input type="text" name="nama_user" size="4"/>
+   <br/>
+ 
+   Size = 10 pixel :
+   <input type="text" name="nama_user" size="10"/>
+   <br/>
+ 
+   Size = 20 pixel :
+   <input type="text" name="nama_user" size="20"/>
+ 
+   </form>
+</body>
+</html>
+```
+
+Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Input Type Text Atribut Size
+
+Atribut maxlength: Membatasi Panjang Karakter Maksimum
+Atribut maxlegth digunakan untuk membatasi seberapa banyak karakter yang dapat diinput kedalam kotak isian. Nilai dari atribut ini adalah banyak maksimum karakter yang bisa diketik. Berikut adalah cara penulisan atribut ini:
+
+```html
+<input type="text" name="id_user" maxlength="4"/>
+```
+
+Dengan memberikan atribut maxlength=”4″, maka ketika user mengetikkan karakter ke 5, karakter tersebut tidak akan bisa diinput. Hal ini cukup penting jika kita membutuhkan panjang karakter yang telah dibatasi untuk inputan form, misalkan untuk password yang dibatasi sebanyak 6 karakter.
+
+Namun anda tidak bisa mengandalkan pembatasan atribut maxlength ini, karena user bisa saja membuat script untuk mengubah nilainya. Atribut maxlength ini sebaiknya digunakan sebagai pelengkap. Proses pengecekan pembatasan karakter sebaiknya dilakukan juga pada saat form akan diproses di sisi web server (menggunakan PHP).
+
+Berikut adalah contoh kode HTML penggunaan atribut maxsize:
+
+```html
+<!DOCTYPE html>
+<html>
+  
+<head>
+   <title>Belajar Tag Input Type=text HTML</title>
+</head>
+ 
+<body>
+ 
+   <h4>Belajar tag Input type="text" duniailkom:</h4>
+   <form>
+ 
+   Size = 04 pixel, maxlength = 04 :
+   <input type="text" name="nama_user" size="4" maxlength="4"/>
+   <br/>
+ 
+   Size = 10 pixel, maxlength = 05 :
+   <input type="text" name="nama_user" size="10" maxlength="5"/>
+   <br/>
+ 
+   Size = 20 pixel, maxlength = 10 :
+   <input type="text" name="nama_user" size="20" maxlength="10"/>
+ 
+   </form>
+ 
+</body>
+</html>
+```
+
+Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Input Type Text Atribut Maxlength
+
+### Atribut disabled dan readonly: Menonaktifkan tag input
+Atribut disabled dan readonly digunakan untuk membuat kotak isian text tidak bisa digunakan. Penggunaan atribut ini biasanya di kombinasikan dengan javascript agar berfungsi maksimal. Misalkan sebuah kotak isian hanya dapat diisi ketika user telah mengisi kotak isian lainnya.
+
+Kedua atribut ini hanya memiliki 1 nilai, yaitu dirinya sendiri, yang ditulis dengan disabled=”disabled” dan readonly =“readonly”. Berikut contoh penulisannya:
+
+```html
+<input type="text" name="nama_user" readonly="readonly" />
+<input type="text" name="nama_user" disabled="disabled" />
+```
+
+Walaupun kedua text yang memiliki atribut ini tidak bisa digunakan, namun keduanya akan memiliki tampilan yang berbeda. Atribut disabled akan membuat kotak text berwarna abu-abu, sedangkan atribut readonly tampak seperti kotak text biasa. Sehingga biasanya atribut disabled lah yang sering digunakan, karena akan memberikan tampilan kepada user bahwa kotak text tersebut tidak bisa digunakan.
+
+Perbedaan lain adalah user masih dapat men-copy isian text isian ketika atributnya diset menjadi readonly. Namun tidak untuk atribut disabled.
+
+Berikut adalah contoh penggunaan atribut disabled dan readonly dalam HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+  
+<head>
+   <title>Belajar Tag Input Type=text HTML</title>
+</head>
+ 
+<body>
+ 
+   <h4>Belajar tag Input type="text" duniailkom:</h4>
+   <form>
+ 
+   User name (normal) :
+   <input type="text" name="nama_user"/>
+   <br/>
+ 
+   User name (readonly) :
+   <input type="text" name="nama_user" readonly="readonly" />
+   <br/>
+ 
+   User name (disabled) :
+   <input type="text" name="nama_user" disabled="disabled" />
+ 
+   </form>
+</body>
+</html>
+```
+
+Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Input Type Text Atribut Readonly dan Disabled
+
+### Atribut id dan class: CSS dan Javascript
+
+Selain atribut type, value, size, maxlength, readonly dan disabled, kita juga bisa menggunakan atribut seperti id dan class dalam tag input type=”text”. Tag id dan class akan dibutuhkan untuk pemograman HTML menggunakan Javascript dan CSS.
+
+### Cara Penggunaan Tag Input type text dan type password
+
+Sebagai penutup, saya akan membuat beberapa tag input untuk merangkum apa yang telah kita pelajari dalan tutorial kali ini, berikut cara penggunaan tag input type text dan type password dalam HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+  
+<head>
+   <title>Belajar Tag Input Type=text HTML</title>
+</head>
+ 
+<body>
+ 
+   <h4>Belajar tag Input type="text" di duniailkom.com:</h4>
+   <form>
+ 
+   Tag Input dengan atribut value :
+   <input type="text" name="nama_user" value="masukkan nama anda"/>
+   <br/>
+ 
+   Tag Input dengan atribut size = 4 :
+   <input type="text" name="nama_user" size="4"/>
+   <br/>
+ 
+   Tag Input dengan atribut maxlength = 5 :
+   <input type="text" name="nama_user" maxlength="5" />
+   <br/>
+ 
+   Tag Input dengan atribut readonly :
+   <input type="text" name="nama_user" readonly="readonly"/>
+   <br/>
+ 
+   Tag Input dengan atribut disabled :
+   <input type="text" name="nama_user" disabled="disabled" />
+   <br/>
+ 
+   </form>
+</body>
+</html>
+```
+
+Tutorial Pembuatan Form HTML - Contoh Cara Penggunaan Tag Input Type Text Finish
+
+Objek form berupa text inputan yang dibuat dengan tag input type text ini mungkin merupakan inputan form yang akan paling sering anda gunakan. Selain memahami atribut-atribut HTML yang digunakan untuk merancang form, di dalam tutorial cara pembuatan form HTML dengan tag input type text ini anda juga telah mempelajari contoh penggunaannya.
+
+
+## tag input type checkbox dalam Pembuatan Form HTML
